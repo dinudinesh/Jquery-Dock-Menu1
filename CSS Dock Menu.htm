@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0062)http://www.ndesign-studio.com/demo/css-dock-menu/css-dock.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+<title>CSS Dock Menu</title>
+<script type="text/javascript" src="./CSS Dock Menu_files/jquery.js"></script>
+<script type="text/javascript" src="./CSS Dock Menu_files/interface.js"></script>
+
+<link href="./CSS Dock Menu_files/dockmenu.css" rel="stylesheet" type="text/css">
+
+<!--[if lt IE 7]>
+ <style type="text/css">
+ .dock img { behavior: url(iepngfix.htc) }
+ </style>
+<![endif]-->
+
+</head>
+<body>
+<!--top dock -->
+<div class="dock" id="dock">
+  <div class="dock-container" style="left: 520px; width: 240px;">
+	  <a class="dock-item" href="http://www.ndesign-studio.com/" style="width: 40px; left: 0px;"><img src="./CSS Dock Menu_files/home.png" alt="home"><span style="display: none;">N.Design</span></a> 
+	  <a class="dock-item" href="http://www.webdesignerwall.com/" style="width: 40px; left: 40px;"><img src="./CSS Dock Menu_files/email.png" alt="contact"><span style="display: none;">Designer Wall</span></a> 
+	  <a class="dock-item" href="http://jobs.webdesignerwall.com/" style="width: 40px; left: 80px;"><img src="./CSS Dock Menu_files/portfolio.png" alt="portfolio"><span style="display: none;">Design Jobs</span></a> 
+	  <a class="dock-item" href="http://bestwebgallery.com/" style="width: 40px; left: 120px;"><img src="./CSS Dock Menu_files/music.png" alt="music"><span style="display: none;">Best Web Gallery</span></a> 
+	  <a class="dock-item" href="http://icondock.com/" style="width: 40px; left: 160px;"><img src="./CSS Dock Menu_files/video.png" alt="video"><span style="display: none;">IconDock</span></a> 
+	  <a class="dock-item" href="http://icondock.com/icons" style="width: 40px; left: 200px;"><img src="./CSS Dock Menu_files/history.png" alt="history"><span style="display: none;">Stock Icons</span></a>
+  </div> 
+</div>
+
+
+<!--dock menu JS options -->
+<script type="text/javascript">
+	
+	$(document).ready(
+		function()
+		{
+			$('#dock').Fisheye(
+				{
+					maxWidth: 50,
+					items: 'a',
+					itemsText: 'span',
+					container: '.dock-container',
+					itemWidth: 40,
+					proximity: 90,
+					halign : 'center'
+				}
+			)
+			
+		}
+	);
+
+</script>
+
+
+</body></html>
